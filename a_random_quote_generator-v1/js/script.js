@@ -15,22 +15,27 @@ const quotes = [
   {
     quote: "The greatest thing in the world is to know how to belong to oneself.",
     source: "Michel de Montaigne",
+    year: 1991,
   },
   {
     quote: "Woe be to him that reads but one book.",
     source: "George Herbert",
+    year: 1993,
   },
   {
     quote: "Love has no place in a lawyer's office.",
     source: "Elizabeth Aston",
+    year: 1994,
   },
   {
     quote: "There's always one who loves and one who lets himself be loved.",
     source: "W. Somerset Maugham",
+    year: 1995,
   },
   {
     quote: "Paradise is exactly like where you are right now... only much, much better.",
     source: "Laurie Anderson",
+    year: 1999,
   },
 ];
 
@@ -53,7 +58,7 @@ function printQuote() {
   let currentQuote = getRandomQuote();
   // This lets us update the classes with JS with the text we want
   let html = "<p class='quote'>" + currentQuote.quote + " </p>";
-  html += "<p class='source'> " + currentQuote.source + " </p>";
+  html += "<p class='source'> " + currentQuote.source + ", " + currentQuote.year + " </p>";
   // This line (line: 58) I'm totally confused about
   document.getElementById("quote-box").innerHTML = html;
 }
